@@ -59,5 +59,5 @@ int main(){
             exibetodoslivros();
         }
     }
-    return 0.
+    return 0;
 }
