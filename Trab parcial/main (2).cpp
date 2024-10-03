@@ -50,10 +50,11 @@ void exibecategorias(Categoria categorias[], int &quantidadecategoria){
 
 
 void cadastraentrada(Entrada entradas[], int &quantidadeentrada){
+    int novaentrada;
     cout << "Quantas entradas você deseja cadastrar?" << endl;
-    cin >> quantidadeentrada;
+    cin >> novaentrada;
     
-    for (int i=0; i < quantidadeentrada; i++){
+    for (int i=quantidadeentrada; i < quantidadeentrada + novaentrada; i++){
         cin.ignore();
         cout << "Qual o nome da sua entrada? " << endl;
         getline (cin, entradas[i].nome);
@@ -61,6 +62,7 @@ void cadastraentrada(Entrada entradas[], int &quantidadeentrada){
         cout << "Qual o valor de sua entrada? " << endl;
         cin >> entradas[i].valor;
     }
+    quantidadeentrada+= novaentrada;
 }
 
 void cadastrasaida(Saida saidas[], int &quantidadesaida){
