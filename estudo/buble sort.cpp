@@ -15,6 +15,12 @@ void ordenando (vector<int> &vetor, int n){
 int main(){
     vector <int> vetor  = {34, 5, 7, 2, 9, 50, 32, 78};
     int n = vetor.size();
+
+    for (int i=0; i < n-1;i++){
+        cout << vetor[i] << endl;
+    }
+
+    cout << "---------------organizando----------------" << endl;
     
     ordenando(vetor, n);
     

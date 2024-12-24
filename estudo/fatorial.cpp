@@ -6,7 +6,7 @@ int fatorial(int n){
     
     if(n == 0){
         n = 1;
-        return 1;
+        return n;
     }
     
     if (n > 0){
@@ -15,7 +15,6 @@ int fatorial(int n){
     } 
     return n;
 }
-
 int main(){
     int n;
     cout << "Digite um numero inteiro positivo" << endl;
@@ -23,7 +22,7 @@ int main(){
     
     if (n < 0){
         cout << "Numero invalido, escolha outro numero" << endl;
-        return 1;
+        return 0;
     }
     
     
